@@ -1,0 +1,39 @@
+- DEALER -
+1. The owner is 0x323be6Eb079Af703191B2213fBfecc0dda777bb8 also Dealer.
+2. The owner can change Dealer to another address - changeDealer('address')
+3. The dealer set the TOKEN address and amount of lottery ticket by `lotterySetup` function
+lotterySetup(0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee,1000000000000000000) //BUSD token, 1BUSD
+4. The player can play the game via - playGame(betNumber)
+5.The Dealer can set Token address - setToken(address)
+6. The Dealer can set Token Amoumt - setTokenAmount(amount)
+7. The dealer can stopGame - stopGame
+8. Player can check total user to join the game - _totalUsers
+9. Player can check random number of current game - getWinNumber
+10. Player can check how many user who has won the game in array - getWonUsers
+11. Player can claim the reward via - ClaimReward() // Token will not auto distribute for winner because of gas.
+The winner must spent gas to claim the reward.
+
+
+=============================================
+- PLAYER-
+How to play
+I. Preparation:
+1. Install Metamask on Chrome add-on
+2. Setting your Network on Metamask - BSC Testnet
+Network Name: Smart Chain - Testnet
+New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+ChainID: 97
+Symbol: BNB
+Block Explorer URL: https://testnet.bscscan.com
+3. add Some BUSD token for Lottery testing (at least 1BUSD) and BNB for GAS at
+https://testnet.binance.org/faucet-smart
+BUSD Testnet address: 0xed24fc36d5ee211ea25a80239fb8c4cfd80f12ee
+II. Play the Lottery Game - https://lottery-36224.web.app/
+1. Connect your metamask by press `CONNECT WALLET` button on UI
+2. Approve Contract can Spend BUSD token by press `APPROVE` button on UI
+3. Check your balance have enough BNB for GAS and also 1BUSD token game
+4.Input Your Ticker Number and Press `PLAY` button
+5. 1BUSD transfer to this contract `0xE77329eF58253972C5c4bd99B42EB8E2FD7042C1`
+https://testnet.bscscan.com/address/0xE77329eF58253972C5c4bd99B42EB8E2FD7042C1
+6. Check the result WIN-LOST when the event ends. (Dealer call Stop() - Refresh the page for the result)
+

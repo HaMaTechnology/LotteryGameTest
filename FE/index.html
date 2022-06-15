@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>Tiki Lottery app.</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <img src="images/loading1.svg" class="h-[34px]" alt="">
+        <div>Loading...</div>
+      </div>
+    </div>
+  </div>
+  <h1>The Lottery Game</h1>
+  <button class="log-out-btn" style="display: none;">LOGOUT</button>
+  <button class="connect-wallet">CONNECT WALLET</button>
+  <div id="info" style="display: none;">
+    <div> BNB Balance: </div>
+    <div> BUSD Balance: </div>
+  </div>
+  <button class="approve-wallet" style="display: none;">APPROVE</button>
+  <div class="lot-section" style="display: none;">You need 1BUSD to join this game. Please input your Lottery Number<br><input type="number" maxlength="2" placeholder="Input lottery Number"/><button class="play-game">PLAY</button></div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/libs/jquery.countdown.js"></script>
+  <script src="js/libs/WalletConnectProvider.min.js"></script>
+  <script src="js/libs/web3.min.js"></script>
+  <script src="js/libs/web3modal.js"></script>
+  
+  <script src="js/connect.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
